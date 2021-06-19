@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-  cout << fixed << setprecision(2);
+  
   tInvest invest;
   float capital, taxa, tempo;
   int opcao;
@@ -16,17 +16,22 @@ int main() {
   cin >> taxa;
   cout << "Informe por quanto tempo o valor ficara aplicado: "; 
   cin >> tempo;
-  cout << "Digite 1 para juro simples e 2 para juro composto: ";
+  cout << "Digite 1 para juro simples e 2 para juro composto  ou 0 para converter a taxa: ";
   cin >> opcao;
 
+  cout << fixed << setprecision(2);
+  taxa = taxa/100;
   if (opcao == 1){
     invest.jSimples(capital, taxa, tempo);
   }
   else if (opcao == 2){
     invest.jComposto(capital, taxa, tempo);
   }
-
-  
-
-  
+  else if (opcao == 0){
+    cout << fixed << setprecision(4);
+    invest.Converte(taxa);
+  }
+  else{
+    cout << "OPCAO INCORRETA. PROGRAMA ENCESSADO." << endl;
+  }
 }
