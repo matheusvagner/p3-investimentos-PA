@@ -32,6 +32,6 @@ int main() {
     invest.Converte(taxa);
   }
   else{
-    cout << "OPCAO INCORRETA. PROGRAMA ENCESSADO." << endl;
+    cout << "OPCAO INCORRETA. PROGRAMA ENCERRADO." << endl;
   }
 }
