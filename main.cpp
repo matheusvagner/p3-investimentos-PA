@@ -12,11 +12,11 @@ int main() {
   
   cout << "Informe o valor inicial da aplicacao: "; 
   cin >> capital;
-  cout << "Informe a taxa anula em porcentagem: "; 
+  cout << "Informe a taxa anual em porcentagem: "; 
   cin >> taxa;
   cout << "Informe por quanto tempo o valor ficara aplicado: "; 
   cin >> tempo;
-  cout << "Digite 1 para juro simples e 2 para juro composto  ou 0 para converter a taxa: ";
+  cout << "Digite 1 para juros simples e 2 para juros compostos ou 0 para converter a taxa: ";
   cin >> opcao;
 
   cout << fixed << setprecision(2);
